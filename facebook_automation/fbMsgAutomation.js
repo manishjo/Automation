@@ -1,4 +1,3 @@
-
 var page = require('webpage').create();
 
 var fillLoginInfo = function(){
@@ -16,8 +15,8 @@ page.onLoadFinished = function(){
 	else
 		page.render('./screens/some.png');
 	console.log(page.title);
-    console.log("1st step completed");
-    phantom.exit();
+	console.log("1st step completed");
+	phantom.exit();
 }
 
 page.open('https://www.facebook.com/');
